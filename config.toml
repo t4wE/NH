@@ -1,0 +1,102 @@
+paginate = 40
+defaultContentLanguage = 'en'
+showLanguageSelector = true
+defaultContentLanguageInSubdir = false
+baseURL = '/'
+
+disableKinds = ["taxonomyTerm","sitemap","RSS"]
+
+[params]
+[sitemap]
+filename = '/sitemap.xml'
+
+
+[outputs]
+    home = ["HTML", "JSON"]
+
+
+[languages]
+[languages.en]
+  contentDir = 'content/en'
+  languageName = "EN"
+  weight=1
+  title = "Northen horizons"
+  subtitle = "tam iskri"
+  owner = "t4wE"
+  description = "Swamps and Lakes"
+  keywords = "stuff"
+  copyright = "t4wE"
+
+[languages.ru]
+  contentDir = 'content/ru'
+  languageName = "RU"
+  weight=2
+  title = "Северные горизонты"
+    subtitle = "там искры"
+  owner = "t4wE"
+  description = "Болота и озёра"
+  keywords = "stuff"
+  copyright = "t4wE"
+
+[languages.en.menu]
+  [[languages.en.menu.main]]
+      identifier = "home"
+        name = "Home"
+        pageRef= "/"
+        weight = 1
+  [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "Projects"
+        pageRef= "/projects"
+        weight = 2
+  [[languages.en.menu.main]]
+        identifier = "publications"
+        name = "Publications"
+        pageRef= "/publications"
+        weight = 3
+  [[languages.en.menu.main]]
+        identifier = "links"
+        name = "Links"
+        pageref= "links"
+        weight = 4
+  [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About mе"
+        pageRef= "about"
+        weight = 5
+  [[languages.en.menu.main]]
+        identifier = "contacts"
+        name = "Contacts"
+        pageRef= "contacts"
+        weight = 6
+[languages.ru.menu]
+  [[languages.ru.menu.main]]
+        identifier = "home"
+        name = "Главная"
+        pageRef= "/"
+        weight = 1
+  [[languages.ru.menu.main]]
+        identifier = "projects"
+        name = "Проекты"
+        pageRef= "/projects"
+        weight = 2
+  [[languages.ru.menu.main]]
+        identifier = "publications"
+        name = "Публикации"
+        pageRef= "/publications"
+        weight = 3
+  [[languages.ru.menu.main]]
+        identifier = "links"
+        name = "Ссылки"
+        pageref= "links"
+        weight = 4
+  [[languages.ru.menu.main]]
+        identifier = "about"
+        name = "Обо мне"
+        pageRef= "about"
+        weight = 5
+  [[languages.ru.menu.main]]
+        identifier = "contacts"
+        name = "Контакты"
+        pageRef= "contacts"
+        weight = 6
