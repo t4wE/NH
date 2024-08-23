@@ -12,15 +12,15 @@
     <header>
         <a id="top"></a>
         {{ partial "header" . }}
-        <div style="display: flex; flex-direction: column;   z-index: 1;  flex: 1;">
-            <div class="menus">
+        <div style="display: flex; flex-direction: column;   z-index: 1;  flex: 1; align-content: center;  align-items: center;">
+            <div class="menus" style="width: 100%;max-width: 2000px; float: right; align-items: center;">
                 {{ partial "langmenu" .}}
                 {{ partial "theme" .}}
             </div>
             {{ partial "panorama" . }}
         </div>
     </header>
-    <article style="flex: auto;flex-direction: column;">
+    <article style=" flex: auto;flex-direction: column;">
         <div class="context" itemscope itemtype="https://schema.org/Article">
             {{ partial "about" . }}
             {{ partial "works" . }}

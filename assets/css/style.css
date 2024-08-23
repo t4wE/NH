@@ -11,6 +11,10 @@
     }
 }
 
+@media (min-width: 2000px) {
+    font-size: calc(9vw * (100vw / 2000px));
+}
+
 @media (max-width:890px) {
     #totop {
         display: none
@@ -33,6 +37,10 @@
     --color-darker: rgb(105, 105, 105);
     --color-dark1: rgb(251, 250, 245);
     --color-dark: #646464
+}
+
+div {
+    /*border: 1px solid black;*/
 }
 
 /* Themes */
@@ -232,7 +240,10 @@ th:hover {
 }
 
 .logo__link {
-    max-width: 100px
+    max-width: 100%;
+    max-width: 2000px !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Lang*/
