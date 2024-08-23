@@ -11,12 +11,16 @@
 <body>
     <header>
         <a id="top"></a>
-        {{ partial "langmenu" .}}
-        {{ partial "theme" .}}
         {{ partial "header" . }}
-        {{ partial "slogan" . }}
+        <div style="display: flex; flex-direction: column;   z-index: 1;  flex: 1;">
+            <div class="menus">
+                {{ partial "langmenu" .}}
+                {{ partial "theme" .}}
+            </div>
+            <hr>
+            {{ partial "panorama" . }}
+        </div>
     </header>
-    {{ partial "panorama" . }}
     <article style="flex: auto;flex-direction: column;">
         <div class="context" itemscope itemtype="https://schema.org/Article">
             {{ partial "about" . }}
@@ -25,10 +29,11 @@
             {{ partial "news" . }}
             {{ partial "map" . }}
         </div>
-        {{ partial "copyright" .}}
     </article>
     <footer>
-        {{ partial "footer"}}
+        {{ partial "contacts" .}}
+        {{ partial "copyright" .}}
+        {{ partial "totop"}}
     </footer>
 </body>
 

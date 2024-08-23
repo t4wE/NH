@@ -98,22 +98,3 @@
   translation:
     "Back to top"
 
-- id: guides
-  translation:
-    "List of guides:"
-
-- id: gl
-  translation:
-    "Good Luck and Have Fun!"
-
-- id: bw
-  translation:
-    "Wish you good luck in all your endeavors!"
-
-- id: guides
-  translation:
-    "Guides"
-
-- id: thislang
-  translation:
-    "en"
