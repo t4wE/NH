@@ -75,7 +75,9 @@ html {
 header {
     font-weight: 900;
     flex-wrap: wrap;
-    flex-direction: column
+    flex-direction: column;
+    background-color: #fafffe;
+
 }
 
 h1,
