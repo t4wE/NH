@@ -20,10 +20,19 @@ div {
 /* Themes */
 
 :root {
-    --color-darkest: rgb(0, 0, 0);
-    --color-darker: rgb(105, 105, 105);
-    --color-dark1: rgb(251, 250, 245);
-    --color-dark: #646464
+    --color-black: rgb(0, 0, 0);
+    --color-dark1: rgb(110, 110, 110);
+    --color-dark2: rgb(123, 123, 123);
+    --color-dark3: rgb(135, 135, 135);
+    --color-dark4: rgb(148, 148, 148);
+    --color-dark5: rgb(161, 161, 161);
+    --color-dark6: rgb(174, 174, 174);
+    --color-dark7: rgb(186, 186, 186);
+    --color-green: #b2d4b6;
+}
+
+.grey {
+    background-color: var(--color-dark7);
 }
 
 @media (prefers-color-scheme:light) {
@@ -31,41 +40,38 @@ div {
         line-height: 1.3;
         overflow-y: scroll;
         margin: 0;
-        background-position: bottom;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position-y: 70%
     }
 }
 
 @media (prefers-color-scheme:dark) {
     body {
-        color: #252525;
-        background: #d3d3d3;
-        background-position: bottom;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position-y: 70%
+        color: var(--color-green);
+         !important;
+        background-color: #949494;
     }
 
-    header {
-
-        background-color: #696969 !important;
-
+    h1,
+    h2,
+    h3,
+    p,
+    a {
+        color: var(--color-green) !important;
     }
+
+
 }
 
 body.dark-mode {
-    color: #ff0;
+    color: var(--color-green);
     background: #696969;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-y: 70%
-}
 
-header.dark-mode {
-
-    background-color: #696969 !important;
+    h1,
+    h2,
+    h3,
+    p,
+    a {
+        color: var(--color-green) !important;
+    }
 
 }
 
@@ -111,18 +117,19 @@ h4 {
 }
 
 a {
-    color: #ffe05d;
+    color: black;
     text-decoration: none
 }
 
+/*
 a:hover {
-    color: #ffc374
+    color: lightgreen;
 }
 
 a:visited {
-    color: #d27d2d
+    color: initial;
 }
-
+*/
 p {
     text-indent: 20px
 }
@@ -423,17 +430,3 @@ ul.hor li {
     padding-bottom: 60px;
     padding-top: 60px
 }
-
-
-
-.grey {
-    background-color: #d3d3d3
-}
-
-.grey::before {
-    background: green;
-
-    border-radius: 500 .about {
-        display: flex;
-        flex: 1;
-    }
