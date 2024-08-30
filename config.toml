@@ -19,6 +19,7 @@ filename = '/sitemap.xml'
 [languages.en]
   contentDir = 'content/en'
   languageName = "EN"
+  flag = "en.svg"
   weight=1
   title = "Northern horizons"
   subtitle = "tam iskri"
@@ -30,6 +31,7 @@ filename = '/sitemap.xml'
 [languages.ru]
   contentDir = 'content/ru'
   languageName = "RU"
+  flag = "ru.svg"
   weight=2
   title = "Северные горизонты"
     subtitle = "там искры"

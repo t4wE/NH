@@ -4,6 +4,15 @@
     #totop {
         display: none
     }
+
+    .flags img {
+        width: 35px !important;
+        height: 25px !important;
+    }
+
+    .lang-switcher {
+        min-width: initial !important;
+    }
 }
 
 @media (max-width:1400px) {
@@ -11,7 +20,11 @@
         height: 10vw !important;
         width: 5vw !important
     }
+
+
 }
+
+
 
 div {
     /*border: 1px solid black;*/
@@ -168,7 +181,7 @@ ul {
 
 .logo__link {
     max-width: 100%;
-    max-width: 2000px !important;
+    max-width: 1900px !important;
     margin-left: auto;
     margin-right: auto;
 }
@@ -194,7 +207,19 @@ ul {
 
 .lang-switcher {
     padding-left: 10px;
-    min-width: 70px
+    min-width: 70px;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+    flex-direction: column;
+    text-align: center;
+    float: right;
+
+    font-size: 12px;
+    padding-left: 0px;
+    margin: auto 5 auto 0;
+
+
 }
 
 ul.hor li {
@@ -207,7 +232,7 @@ ul.hor li {
     position: fixed;
     bottom: 10px;
     left: 10px;
-    height: 20vw;
+    height: 15vw;
     width: 10vw;
     margin-bottom: 0;
     margin-left: 0
@@ -429,4 +454,23 @@ ul.hor li {
 .bloq {
     padding-bottom: 60px;
     padding-top: 60px
+}
+
+.language-flags {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.language-flags li {
+    margin-right: 10px;
+}
+
+.language-flags img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }

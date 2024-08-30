@@ -1,8 +1,9 @@
-<div class="lang-switcher" style="display:flex; align-content: center;vertical-align: middle;flex-direction: column; text-align: center ; float: right;margin-right: 30px; font-size: 12px; padding-left: 0px; margin: auto 5 auto 0;">{{ i18n "switch" }}
-    {{ if .IsTranslated }}
-    {{ range .Translations }}
-    <a href="{{ .Permalink }}"><img src="/images/{{.Language}}.svg" / style="width: 30px; height: 20px; margin-top: 3px;" alt="lang"></a>
-    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-    {{ end}}
+<div class="flags">
+    {{ range $.Site.Home.AllTranslations }}
+    <div class="{{.Language.LanguageName }} lang-switcher" width=50 style=" padding: 5px 5px 5px 5px;">
+        <a href=" {{.Permalink }}" rel=" alternate" hreflang="{{.Lang }}" style=" border: 1px solid black; ">
+            <img src="/images/{{.Lang }}.svg" style="width: 70px; height:50px; margin-right:0; margin-left: 0 ; " alt="{{.Language.LanguageName }}" />
+        </a>
+    </div>
     {{ end }}
 </div>
