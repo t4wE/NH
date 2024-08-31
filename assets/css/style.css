@@ -6,8 +6,8 @@
     }
 
     .flags img {
-        width: 35px !important;
-        height: 25px !important;
+        width: 21px !important;
+        height: 15px !important;
     }
 
     .lang-switcher {
@@ -207,14 +207,12 @@ ul {
 
 .lang-switcher {
     padding-left: 10px;
-    min-width: 70px;
     display: flex;
     align-content: center;
     vertical-align: middle;
     flex-direction: column;
     text-align: center;
     float: right;
-
     font-size: 12px;
     padding-left: 0px;
     margin: auto 5 auto 0;
