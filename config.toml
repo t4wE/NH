@@ -1,5 +1,5 @@
 paginate = 40
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'ru'
 showLanguageSelector = true
 defaultContentLanguageInSubdir = false
 baseURL = '/'
@@ -16,29 +16,64 @@ filename = '/sitemap.xml'
 
 
 [languages]
-[languages.en]
-  contentDir = 'content/en'
-  languageName = "EN"
-  flag = "en.svg"
-  weight=1
-  title = "Northern horizons"
-  subtitle = "tam iskri"
-  owner = "t4wE"
-  description = "Swamps and Lakes"
-  keywords = "stuff"
-  copyright = "t4wE"
 
 [languages.ru]
   contentDir = 'content/ru'
   languageName = "RU"
   flag = "ru.svg"
-  weight=2
+  weight= 1
   title = "Северные горизонты"
-    subtitle = "там искры"
-  owner = "t4wE"
-  description = "Болота и озёра"
-  keywords = "stuff"
-  copyright = "t4wE"
+  subtitle = "прекрасны"
+  owner = "Дмитрий Садоков"
+  description = ""
+  keywords = "НКО, ООПТ, заповедник"
+  copyright = "Дмитрий Садоков"
+
+[languages.en]
+  contentDir = 'content/en'
+  languageName = "EN"
+  flag = "en.svg"
+  weight= 2
+  title = "Northern horizons"
+  subtitle = "are beautiful"
+  owner = "Dmitrii Sadokov"
+  description = "Autonomous non-profit organization"
+  keywords = "Protected areas, conservation areas, nature reserve"
+  copyright = "Dmitrii Sadokov"
+
+
+
+[languages.ru.menu]
+  [[languages.ru.menu.main]]
+        identifier = "home"
+        name = "Главная"
+        pageRef= "/"
+        weight = 1
+  [[languages.ru.menu.main]]
+        identifier = "projects"
+        name = "Проекты"
+        pageRef= "/projects"
+        weight = 2
+  [[languages.ru.menu.main]]
+        identifier = "publications"
+        name = "Публикации"
+        pageRef= "/publications"
+        weight = 3
+  [[languages.ru.menu.main]]
+        identifier = "links"
+        name = "Ссылки"
+        pageref= "/links"
+        weight = 4
+  [[languages.ru.menu.main]]
+        identifier = "about"
+        name = "Обо мне"
+        pageRef= "/about"
+        weight = 5
+  [[languages.ru.menu.main]]
+        identifier = "contacts"
+        name = "Контакты"
+        pageRef= "/contacts"
+        weight = 6
 
 [languages.en.menu]
   [[languages.en.menu.main]]
@@ -59,46 +94,16 @@ filename = '/sitemap.xml'
   [[languages.en.menu.main]]
         identifier = "links"
         name = "Links"
-        pageref= "links"
+        pageref= "/links"
         weight = 4
   [[languages.en.menu.main]]
         identifier = "about"
         name = "About mе"
-        pageRef= "about"
+        pageRef= "/about"
         weight = 5
   [[languages.en.menu.main]]
         identifier = "contacts"
         name = "Contacts"
-        pageRef= "contacts"
+        pageRef= "/contacts"
         weight = 6
-[languages.ru.menu]
-  [[languages.ru.menu.main]]
-        identifier = "home"
-        name = "Главная"
-        pageRef= "/"
-        weight = 1
-  [[languages.ru.menu.main]]
-        identifier = "projects"
-        name = "Проекты"
-        pageRef= "/projects"
-        weight = 2
-  [[languages.ru.menu.main]]
-        identifier = "publications"
-        name = "Публикации"
-        pageRef= "/publications"
-        weight = 3
-  [[languages.ru.menu.main]]
-        identifier = "links"
-        name = "Ссылки"
-        pageref= "links"
-        weight = 4
-  [[languages.ru.menu.main]]
-        identifier = "about"
-        name = "Обо мне"
-        pageRef= "about"
-        weight = 5
-  [[languages.ru.menu.main]]
-        identifier = "contacts"
-        name = "Контакты"
-        pageRef= "contacts"
-        weight = 6
+

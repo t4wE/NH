@@ -17,7 +17,7 @@
 
 @media (max-width:1400px) {
     #totop {
-        height: 10vw !important;
+        height: 7vw !important;
         width: 5vw !important
     }
 
@@ -230,8 +230,8 @@ ul.hor li {
     position: fixed;
     bottom: 10px;
     left: 10px;
-    height: 15vw;
-    width: 10vw;
+    height: 12vw;
+    width: 8vw;
     margin-bottom: 0;
     margin-left: 0
 }
