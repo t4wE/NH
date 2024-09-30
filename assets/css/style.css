@@ -1,5 +1,7 @@
 /*Responsiveness*/
 
+
+
 @media (max-width:890px) {
     #totop {
         display: none
@@ -15,6 +17,17 @@
     }
 }
 
+@media (max-width:1550px) {
+    .shapka {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .menu__list {
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width:1400px) {
     #totop {
         height: 7vw !important;
@@ -25,9 +38,9 @@
 }
 
 
+* {
+    outline: 1px solid black;
 
-div {
-    /*border: 1px solid black;*/
 }
 
 /* Themes */
@@ -90,11 +103,11 @@ body.dark-mode {
 
 /*General*/
 
-* {
+/** {
     margin: 0;
     padding: 0
 }
-
+*/
 html {
     font-size: 100%;
     -ms-text-size-adjust: none;
@@ -109,6 +122,24 @@ header {
     flex-direction: column;
 
 
+}
+
+#desktop {
+    display: block;
+}
+
+#mobile {
+    display: none
+}
+
+@media all and (max-width: 499px) {
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
+    }
 }
 
 h1,
@@ -177,11 +208,83 @@ ul {
     list-style-position: inside
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 1460px;
+}
+
+.shapka {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to right, #ffffff, #a9cde0);
+}
+
+.nh img {
+    max-width: 550px !important;
+    margin-left: 0;
+    display: flex;
+}
+
+/*nav {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 160px;
+}
+*/
+.menu__list {
+    margin: auto 12px auto 12px;
+    justify-content: center;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: auto;
+    /* max-width: 900px;
+   */
+
+}
+
+.menu__item {
+    transition: background-color .25s ease-out;
+    font-size: 17px;
+    border: 1px solid grey;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Exocet', sans-serif;
+    white-space: initial;
+    word-wrap: break-word;
+}
+
+.menu__item:hover {
+    background: grey;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.active {
+    background: lightblue;
+    /*font-size: 120%;*/
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.menu__link {
+    display: block;
+    padding: .625rem .9375rem;
+    font-weight: 900;
+}
+
 /*Logo*/
 
 .logo__link {
     max-width: 100%;
-    max-width: 1900px !important;
+    max-width: 1600px !important;
     margin-left: auto;
     margin-right: auto;
 }
@@ -471,4 +574,104 @@ ul.hor li {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+}
+
+//panorama
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
