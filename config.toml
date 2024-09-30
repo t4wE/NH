@@ -4,7 +4,7 @@ showLanguageSelector = false
 defaultContentLanguageInSubdir = false
 baseURL = '/'
 
-disableKinds = ["taxonomy","sitemap","RSS"]
+disableKinds = ["taxonomyTerm","sitemap","RSS"]
 
 [params]
 [sitemap]
