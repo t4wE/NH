@@ -1,50 +1,14 @@
 {{ define "main" }}
-<main>
-    <div class="container">
-        <h1>Articles</h1>
-        <main class="list">
-            {{ $pages := .Pages }}
-            {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
-            {{ $paginator := .Paginate (where $pages "Section" "!=" "") }}
-            {{ range $paginator.Pages }}
-            <section class="article-list">
-                <div class="categories">
-                    {{ with .Params.categories }}
-                    {{ range first 1 . }}
-                    <a href="{{ relURL (print "/categories/" . | urlize) }}">{{ . }}</a>
-                    {{ end }}
-                    {{ else }}
-                    <a>{{ default "Uncategorized" .Site.Params.text.uncategorized }}</a>
-                    {{ end }}
-                </div>
-                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-                <div class="date-author">
-                    {{ if .Params.author }}<span class="author">{{ partial "author_names.html" . }}</span> / {{ end }}
-                    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
-                </div>
-                <div class="summary">
-                    <a href="{{ .RelPermalink }}">
-                        {{ with .Resources.GetMatch (printf "%s" .Params.thumbnail) }}
-                        <div class="thumbnail"><img src="{{ relURL .Permalink }}" alt="Thumbnail" /></div>
-                        {{ else }}
-                        {{ with .Params.thumbnail }}
-                        <div class="thumbnail"><img src="{{ relURL .}}" alt="Thumbnail" /></div>
-                        {{ else }}
-                        {{ $img := findRE "<img src=\"[^\"]+\"" .Content 1 }} {{ range $img }} <div class="thumbnail">{{ (print . " alt=\"Thumbnail\" />") | safeHTML }}</div>
-                {{ end }}
-                {{ end }}
-                {{ end }}
-                {{ with .Description }}
-                {{ $.Scratch.Set "summary" (markdownify .) }}
-                {{ else }}
-                {{ $.Scratch.Set "summary" ((delimit (findRE "(<p.*?>(.|\n)*?</p>\\s*)+" .Content) "[&hellip;] ") | plainify | truncate (default 200 .Site.Params.summary_length) (default " &hellip;" .Site.Params.text.truncated ) | replaceRE "&amp;" "&" | safeHTML) }}
-                    {{ end }}
-                    {{ $.Scratch.Get "summary" }}
-                    </a>
-    </div>
-    </section>
-    {{ end }}
-</main>
+<h1 itemprop="headline">{{ i18n "guides" }} </h1>
+<div itemprop="description">
+    <ol style="font-family: 'Exocet', sans-serif;">
+        {{ range sort .Pages "Date" "desc"}}
+        <li>
+            <a href="{{ .RelPermalink }}">
+                {{ .Title }}
+            </a>
+        </li>
+        {{end}}
+    </ol>
 </div>
-</main>
-{{ end }}
+{{end}}

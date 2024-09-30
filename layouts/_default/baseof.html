@@ -24,16 +24,11 @@
     </header>
     <article style=" flex: auto;flex-direction: column;">
         <div class="context" itemscope itemtype="https://schema.org/Article">
-            {{ partial "about" . }}
-            {{ partial "works" . }}
-            {{ partial "partners" . }}
-            {{ partial "news" . }}
-            {{ partial "map" . }}
+            {{ block "main" . }}
+            {{ end }}
         </div>
     </article>
-    {{ partial "panorama" . }}
     <footer>
-        {{ partial "contacts" .}}
         {{ partial "copyright" .}}
         {{ partial "totop"}}
     </footer>

@@ -1,6 +1,6 @@
 paginate = 40
 defaultContentLanguage = 'ru'
-showLanguageSelector = true
+showLanguageSelector = false
 defaultContentLanguageInSubdir = false
 baseURL = '/'
 
@@ -18,7 +18,7 @@ filename = '/sitemap.xml'
 [languages]
 
 [languages.ru]
-  [languages.ru.params]
+
   contentDir = 'content/ru'
   languageName = "RU"
   flag = "ru.svg"
@@ -31,7 +31,7 @@ filename = '/sitemap.xml'
   copyright = "Дмитрий Садоков"
 
 [languages.en]
-  [languages.en.params]
+
   contentDir = 'content/en'
   languageName = "EN"
   flag = "en.svg"
@@ -52,40 +52,35 @@ filename = '/sitemap.xml'
         pageRef= "/"
         weight = 1
   [[languages.ru.menu.main]]
-        identifier = "projects"
-        name = "Проекты"
-        pageRef= "/projects"
-        weight = 2
-  [[languages.ru.menu.main]]
-        identifier = "publications"
-        name = "Публикации"
-        pageRef= "/publications"
-        weight = 3
-  [[languages.ru.menu.main]]
-        identifier = "links"
-        name = "Ссылки"
-        pageref= "/links"
+        identifier = "organization"
+        name = "Организация"
+        pageref= "/organization"
         weight = 4
+  [[languages.ru.menu.main]]
+        identifier = "team"
+        name = "Комманда"
+        pageref= "/team"
+        weight = 5
   [[languages.ru.menu.main]]
         identifier = "works"
         name = "Наша работа"
-        pageRef= "#works"
-        weight = 5
+        pageRef= "/works"
+        weight = 6
   [[languages.ru.menu.main]]
         identifier = "partners"
         name = "Партнёры"
-        pageRef= "#partners"
-        weight = 6
+        pageRef= "/partners"
+        weight = 7
   [[languages.ru.menu.main]]
         identifier = "news"
         name = "Новости"
-        pageRef= "#news"
-        weight = 7
+        pageRef= "/news"
+        weight = 8
   [[languages.ru.menu.main]]
         identifier = "contacts"
         name = "Контакты"
         pageRef= "/contacts"
-        weight = 8
+        weight = 9
 
 [languages.en.menu]
   [[languages.en.menu.main]]
@@ -94,38 +89,33 @@ filename = '/sitemap.xml'
         pageRef= "/"
         weight = 1
   [[languages.en.menu.main]]
-        identifier = "projects"
-        name = "Projects"
-        pageRef= "/projects"
-        weight = 2
-  [[languages.en.menu.main]]
-        identifier = "publications"
-        name = "Publications"
-        pageRef= "/publications"
-        weight = 3
-  [[languages.en.menu.main]]
-        identifier = "links"
-        name = "Links"
-        pageref= "/links"
+        identifier = "organization"
+        name = "Organization"
+        pageref= "/organization"
         weight = 4
+  [[languages.en.menu.main]]
+        identifier = "team"
+        name = "Team"
+        pageref= "/team"
+        weight = 5
   [[languages.en.menu.main]]
         identifier = "works"
         name = "Works"
-        pageRef= "#works"
-        weight = 5
+        pageRef= "/works"
+        weight = 6
   [[languages.en.menu.main]]
         identifier = "partners"
         name = "Partners"
-        pageRef= "#partners"
-        weight = 6
+        pageRef= "/partners"
+        weight = 7
   [[languages.en.menu.main]]
         identifier = "news"
         name = "News"
-        pageRef= "#news"
-        weight = 7
+        pageRef= "/news"
+        weight = 8
   [[languages.en.menu.main]]
         identifier = "contacts"
         name = "Contacts"
         pageRef= "/contacts"
-        weight = 6
+        weight = 9
 
