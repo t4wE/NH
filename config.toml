@@ -56,7 +56,7 @@ keywords = "НКО, ООПТ, заповедник"
         weight = 4
   [[languages.ru.menu.main]]
         identifier = "team"
-        name = "Комманда"
+        name = "Команда"
         pageref= "/team"
         weight = 5
   [[languages.ru.menu.main]]

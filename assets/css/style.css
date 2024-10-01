@@ -1,6 +1,7 @@
-@media (max-width:1550px) {
+@media (max-width:1600px) {
 
     /*Responsiveness*/
+    /*move navebar to bottom*/
     .shapka {
         flex-direction: column !important;
         align-items: center;
@@ -131,6 +132,10 @@ body.dark-mode {
     .menu__list {
         background-image: linear-gradient(to right, #5c7f92, #688797);
     }
+
+    .menu__item:hover {
+        background: #4f528f;
+    }
 }
 
 .context>div:nth-child(even) {
@@ -195,7 +200,6 @@ th {
 h1 {
     font-size: 32px;
     margin: 10px 0;
-
     text-decoration-line: underline overline;
 
     /*
@@ -317,8 +321,7 @@ nav {
 }
 
 .menu__item:hover {
-    background: grey;
-
+    background: #598399;
 }
 
 .active {
