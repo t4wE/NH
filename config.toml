@@ -22,10 +22,10 @@ filename = '/sitemap.xml'
   title = "Северные горизонты"
   copyright = "Дмитрий Садоков"
   [languages.ru.params]
-    keywords = "НКО, ООПТ, заповедник"
-    subtitle = "прекрасны"
+    keywords = "НКО, Северные горизонты, ООПТ, заповедник"
+    subtitle = "НКО"
     owner = "Дмитрий Садоков"
-    description = "НКО"
+    description = "НКО, Некоммерческая организация"
     flag = "ru.svg"
 
 [languages.en]
@@ -35,10 +35,10 @@ filename = '/sitemap.xml'
   title = "Northern horizons"
   copyright = "Dmitrii Sadokov"
   [languages.en.params]
-    keywords = "Protected areas, conservation areas, nature reserve"
-    subtitle = "are beautiful"
+    keywords = "NPO, Protected areas, Northern horizons, conservation areas, nature reserve"
+    subtitle = "NPO"
     owner = "Dmitrii Sadokov"
-    description = "Autonomous non-profit organization"
+    description = "NPO, Autonomous non-profit organization"
     flag = "en.svg"
 
 [languages.ru.menu]
