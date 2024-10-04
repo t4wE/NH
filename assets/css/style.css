@@ -17,7 +17,12 @@
 
     #totop {
         height: 7vw !important;
-        width: 5vw !important
+        width: 5vw !important;
+    }
+
+    .about {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
     }
 }
 
@@ -46,6 +51,11 @@
     .buttons {
 
         flex-direction: column;
+    }
+
+    .about {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 }
 
@@ -101,7 +111,7 @@
         color: var(--color-dark7) !important;
     }
 
-    .context>div:nth-child(even) {
+    .main>div:nth-child(even) {
         background-color: var(--color-dark2);
     }
 }
@@ -118,7 +128,7 @@ body.dark-mode {
         color: var(--color-dark9);
     }
 
-    .context>div:nth-child(even) {
+    .main>div:nth-child(even) {
         background-color: var(--color-dark1);
     }
 
@@ -139,13 +149,34 @@ body.dark-mode {
     }
 }
 
-.context>div:nth-child(even) {
+.column {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    flex: 1;
+    align-items: center;
+}
+
+.menus {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    max-width: 1900px;
+    margin-right: 20px;
+}
+
+.headline {
+    display: none;
+}
+
+.main>div:nth-child(even) {
     /*Color even blocks*/
     background-color: #f2f2f2;
 
 }
 
-.context>div {
+.main>div {
     padding-bottom: 60px;
     padding-top: 60px
 }
@@ -556,6 +587,21 @@ ul.hor li {
     display: none
 }
 
+
+.works {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.works img {
+    max-height: 50px;
+    display: unset;
+    max-width: 50px;
+}
+
 .news-block {
     display: flex;
     justify-content: center;
@@ -577,7 +623,7 @@ ul.hor li {
 .news-item {
     max-width: 400px;
     margin: 10px;
-    display: inline-block;
+
     min-width: 150px;
     text-align: center;
     justify-content: center;
@@ -605,8 +651,6 @@ ul.hor li {
     font-size: 16px;
     text-align: center;
 }
-
-
 
 .language-flags {
     list-style: none;
@@ -746,12 +790,7 @@ ul.hor li {
     max-width: 400px;
 }
 
-.works img {
 
-    max-height: 50px;
-    display: unset;
-    max-width: 50px;
-}
 
 .copyright {
     display: flex;
@@ -764,11 +803,10 @@ ul.hor li {
 
 .about {
     margin: 0 20px 0 20px;
-    max-width: 1800px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 400px;
+    padding-right: 400px;
 }
 
 .buttons {

@@ -3,8 +3,27 @@ title: "Северные горизонты"
 date: 2022-02-11T21:20:47+01:00
 draft: false
 description: "Северные горизонты описание"
+type: _default
+layout: single
 keywords:
 - NH
 translationKey: home
 ---
-{{< panorama>}} {{< about>}} {{< works>}} {{< partners>}} {{< news>}} {{< map>}} {{< contacts>}}
+<div class="main">
+    <!--panorama>   <-->
+    {{< panorama>}}
+        <!--end panorama start about> 	<-->
+        {{< about>}}
+            <!--end about start works><-->
+            {{< works>}}
+                <!--end works start partners><-->
+                <-->
+                    {{< partners>}}
+                        <!--end partners start news><-->
+                        {{< news>}}
+                            <!--end news start map><-->
+                            {{< map>}}
+                                <!--end map start contacts><-->
+                                {{< contacts>}}
+                                    <!--end contacts><-->
+</div>

@@ -15,7 +15,6 @@ filename = '/sitemap.xml'
     home = ["HTML", "JSON"]
 
 [languages]
-
 [languages.ru]
   contentDir = 'content/ru'
   languageName = "RU"
@@ -23,14 +22,13 @@ filename = '/sitemap.xml'
   title = "Северные горизонты"
   copyright = "Дмитрий Садоков"
   [languages.ru.params]
-    flag = "ru.svg"
+    keywords = "НКО, ООПТ, заповедник"
     subtitle = "прекрасны"
     owner = "Дмитрий Садоков"
     description = "НКО"
+    flag = "ru.svg"
 
 [languages.en]
-
-keywords = "НКО, ООПТ, заповедник"
   contentDir = 'content/en'
   languageName = "EN"
   weight= 2
@@ -38,10 +36,10 @@ keywords = "НКО, ООПТ, заповедник"
   copyright = "Dmitrii Sadokov"
   [languages.en.params]
     keywords = "Protected areas, conservation areas, nature reserve"
-    flag = "en.svg"
     subtitle = "are beautiful"
     owner = "Dmitrii Sadokov"
     description = "Autonomous non-profit organization"
+    flag = "en.svg"
 
 [languages.ru.menu]
   [[languages.ru.menu.main]]
