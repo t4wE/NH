@@ -63,11 +63,6 @@ filename = '/sitemap.xml'
         pageRef= "/works"
         weight = 6
   [[languages.ru.menu.main]]
-        identifier = "partners"
-        name = "Партнёры"
-        pageRef= "/partners"
-        weight = 7
-  [[languages.ru.menu.main]]
         identifier = "news"
         name = "Новости"
         pageRef= "/news"
@@ -99,11 +94,6 @@ filename = '/sitemap.xml'
         name = "Works"
         pageRef= "/works"
         weight = 6
-  [[languages.en.menu.main]]
-        identifier = "partners"
-        name = "Partners"
-        pageRef= "/partners"
-        weight = 7
   [[languages.en.menu.main]]
         identifier = "news"
         name = "News"

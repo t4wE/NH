@@ -6,6 +6,8 @@ Disallow: /contacts
 Disallow: /ru/contacts
 Disallow: /en/contacts
 Disallow: /contacts/
+Disallow: /ru/contacts/
+Disallow: /en/contacts/
 Disallow: /404.html
 Disallow: *404.html
 Sitemap: https://northernhorizons.ru/sitemap.xml
