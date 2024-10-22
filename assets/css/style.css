@@ -1035,8 +1035,8 @@ ul.hor li {
     }
 
     .menu__item {
-        width: 90%;
-        font-size: 15px;
+        width: 95%;
+        font-size: 3vw;
     }
 
     .shapka .mobile {
