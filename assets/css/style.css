@@ -304,7 +304,7 @@ ul {
 
 .menu__link {
     display: block;
-    padding: 10px 39px 10px 39px;
+    padding: 10px 50px 10px 50px;
     font-weight: 900;
 }
 
@@ -331,6 +331,13 @@ ul {
 .logo__subtitle {
     font-size: 4vw
 }
+
+.organization img {
+    float: right;
+    padding: 10px;
+    max-width: 600px;
+}
+
 
 
 
@@ -971,7 +978,7 @@ ul.hor li {
     }
 }
 
-@media (max-width:1900px) {
+@media (max-width:1910px) {
 
     .menu__link {
         padding: 10px 45px 10px 45px !important;
@@ -999,7 +1006,7 @@ ul.hor li {
 
 
 
-@media (max-width:1530px) {
+@media (max-width:1600px) {
 
     /*Responsiveness at 1660*/
     /*move navebar to bottom*/
@@ -1032,6 +1039,8 @@ ul.hor li {
 
 }
 
+
+
 @media (max-width:890px) {
 
     /*Responsivenessat 890*/
@@ -1053,7 +1062,11 @@ ul.hor li {
     }
 
     img {
-        width: 100%;
+        width: 100vw
+    }
+
+    .organization img {
+        float: none;
     }
 
     h1 {
@@ -1077,6 +1090,10 @@ ul.hor li {
     .menu__item {
 
         margin-top: 10px;
+    }
+
+    .team img {
+        float: none !important;
     }
 }
 
@@ -1106,6 +1123,10 @@ ul.hor li {
     .menu__item {
         margin-right: 10px !important;
         margin-top: 10px;
+    }
+
+    .mobile {
+        padding: 30px;
     }
 
 }
