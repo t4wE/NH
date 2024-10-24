@@ -103,7 +103,7 @@ body {
     overflow-y: scroll;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    font-size: 27px;
+    font-size: 1.5rem;
 }
 
 html {
@@ -194,7 +194,7 @@ th {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: 3rem;
     margin: 10px 0;
     /*text-decoration-line: underline overline;*/
 
@@ -207,6 +207,7 @@ h1 {
 h2,
 h3,
 h4 {
+    font-size: 2rem;
     padding-left: 15px;
     margin: 5px 0;
     /*text-decoration-line: underline overline;*/
@@ -281,14 +282,12 @@ ul {
 .menu__item {
     transition: background-color .25s ease-out;
     font-size: 17px;
-
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     font-family: 'Exocet', sans-serif;
     white-space: initial;
     word-wrap: break-word;
-    padding: 0 30px 0 30px;
     background-image: linear-gradient(to right, #a7bccc, #a9cde0);
 }
 
@@ -305,7 +304,7 @@ ul {
 
 .menu__link {
     display: block;
-    padding: .525rem .4375rem;
+    padding: 10px 39px 10px 39px;
     font-weight: 900;
 }
 
@@ -972,17 +971,35 @@ ul.hor li {
     }
 }
 
-@media (max-width:1875px) {
+@media (max-width:1900px) {
 
-    .menu__item {
-        padding: 0 10px 0 10px !important;
-        margin-top: 10px;
+    .menu__link {
+        padding: 10px 45px 10px 45px !important;
+
+    }
+
+}
+
+@media (max-width:1800px) {
+
+    .menu__link {
+        padding: 10px 35px 10px 35px !important;
+
+    }
+
+}
+
+@media (max-width:1700px) {
+
+    .menu__link {
+        padding: 10px 25px 10px 25px !important;
     }
 
 }
 
 
-@media (max-width:1600px) {
+
+@media (max-width:1530px) {
 
     /*Responsiveness at 1660*/
     /*move navebar to bottom*/
@@ -1007,6 +1024,10 @@ ul.hor li {
     .about {
         padding-left: 100px !important;
         padding-right: 100px !important;
+    }
+
+    .menu__link {
+        padding: 1rem;
     }
 
 }
@@ -1052,6 +1073,11 @@ ul.hor li {
     .merged {
         flex-direction: column !important;
     }
+
+    .menu__item {
+
+        margin-top: 10px;
+    }
 }
 
 @media (max-width:550px) {
@@ -1079,6 +1105,7 @@ ul.hor li {
 
     .menu__item {
         margin-right: 10px !important;
+        margin-top: 10px;
     }
 
 }
