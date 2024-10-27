@@ -151,7 +151,7 @@
 
 
 # 480 weeks
-<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|svg|swf)$">
 Header set Cache-Control "max-age=290304000, public"
 </FilesMatch>
 
