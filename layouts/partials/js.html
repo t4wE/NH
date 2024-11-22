@@ -50,7 +50,9 @@ document.getElementById("myModal").addEventListener("click", function(event) {
 let slideIndex = 1;
 let intervalId;
 
-showSlides(slideIndex);
+// Initialize slideshow without animation
+showSlides(slideIndex, true);
+startInterval();
 
 // Next/previous controls
 function plusSlides(n) {
@@ -66,7 +68,7 @@ function currentSlide(n) {
     startInterval(); // Restart interval
 }
 
-function showSlides(n) {
+function showSlides(n, reset = false) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -80,6 +82,13 @@ function showSlides(n) {
     }
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
+
+    // Skip animation during initial load
+    if (reset) {
+        slides[slideIndex - 1].style.animation = "none";
+    } else {
+        slides[slideIndex - 1].style.animation = ""; // Reset to default
+    }
 }
 
 function startInterval() {
