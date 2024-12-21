@@ -532,20 +532,22 @@ ul.hor li {
     display: none
 }
 
-
 .works {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
-
 }
 
 .works img {
-
-
     display: unset;
+}
 
+.news-preview {
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 .news-block {
