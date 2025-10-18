@@ -52,7 +52,7 @@ let intervalId;
 
 // Initialize slideshow without animation
 showSlides(slideIndex, true);
-startInterval();
+startInterval(); // Start interval initially
 
 // Next/previous controls
 function plusSlides(n) {
@@ -96,6 +96,4 @@ function startInterval() {
         plusSlides(1);
     }, 10000);
 }
-
-startInterval(); // Start interval initially
 </script>
